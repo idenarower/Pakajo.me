@@ -88,15 +88,21 @@ footer {
     font-size: 5rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   body {
     background-image: url("../img/desktop.jpg");
     background-position: right bottom;
   }
   .hero-title {
+    position: relative;
     font-size: 10rem;
   }
+  .hero-title__text {
+    position: absolute;
+    bottom: 0;
+  }
   .hero-content {
+    padding-top: 2rem;
     font-size: 4rem;
   }
   .hero-box {

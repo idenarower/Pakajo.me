@@ -18,7 +18,6 @@ body {
 
 .hero {
 	height: 100vh;
-
 	&-title {
 		height: 80%;
 		padding: 5rem 2rem 0 2rem;
@@ -87,24 +86,31 @@ footer {
 			}
 		}
 	}
-}
 
-@media (min-width: 992px) {
-	body {
-		background-image: url('../img/desktop.jpg');
-		background-position: right bottom;
-	}
-	.hero {
-		&-title {
-			font-size: 10rem;
+	@media (min-width: 992px) {
+		body {
+			background-image: url('../img/desktop.jpg');
+			background-position: right bottom;
 		}
-		&-content {
-			font-size: 4rem;
-		}
-		&-box {
-			font-size: 3.2rem;
-			.fa-brands {
-				font-size: 5rem;
+		.hero {
+			&-title {
+				position: relative;
+				font-size: 10rem;
+				
+				&__text {
+					position: absolute;
+					bottom: 0;
+									}
+			}
+			&-content {
+                padding-top: 2rem;
+				font-size: 4rem;
+			}
+			&-box {
+				font-size: 3.2rem;
+				.fa-brands {
+					font-size: 5rem;
+				}
 			}
 		}
 	}
